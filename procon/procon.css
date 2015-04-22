@@ -1,0 +1,131 @@
+/****************************************************************************************
+* Disclaimer: This file (procon.css) is part of the "BBB procon rank" project.
+* The plugin is intended to be used with the MyBB framework (www.mybb.com), 
+* specifically for the www.beer-boobs-bombs.de (BBB) website.
+* This plugin is mainly made to give ranking data to the end-user which is 
+* retrieved from the Procon database which is provided by the 
+* "Chat, GUID, Stats and Mapstats Logger[1.0.0.2]" plugin which I will be referring 
+* as logger plugin for simplicity's sake ;). The logger plugin reffered to is at:
+* https://forum.myrcon.com/showthread.php?6698-Chat-GUID-Stats-and-Mapstats-Logger-1-0-0-2
+* 
+* I do NOT own that project so credits for the logger plugin go to the developers of the 
+* logger plugin. I solely made this plugin as an addition to the BBB website so end users
+* can ask for ranks on the website. This plugin is distributed in the hope that it will be 
+* useful, but WITHOUT ANY WARRANTY. This plugin is free software. You are allowed to modify 
+* and freely redistribute it (a mentioning of my name will be highly appreciated of course ;) ).
+* I do NOT intend to make money or profit from this software (however a donation is always welcome)
+* 
+* (c) Paul van Wijk a.k.a PabloDavico
+******************************************************************************************/
+
+#rankingPane {
+/*  background-color: #203030;*/
+/*   border: 2px solid #a1a1a1;   */
+/*   width:35%; */
+  float: left;
+  padding:10px;
+}
+
+#rankweapon {
+  width:240px;
+}
+
+#rankname {
+  width:240px;
+}
+
+#rankingresult {
+  width:200px;
+  height:90px;
+  padding:20px;
+  background-color: #080808;
+  border: 2px solid #a1a1a1;  
+  border-radius: 8px;
+  overflow:auto;
+} 
+
+#rankingresult p {
+  color:green;
+  padding: 2px;
+}
+
+#topXpane {
+/*   background-color: #204040; */
+/*   border: 1px solid #a1a1a1;   */
+/*   width:60%; */
+  overflow:hidden;
+/*   float:left; */
+  padding:10px;
+}
+    
+#topXpane tr:nth-child(even) {
+  background: #0F0F0F;
+}
+  
+#topXpane th { 
+  text-align: center; 
+  color:#555555;
+  padding: 2px;
+  font-weight: bold;
+  background-color:#060606;
+}
+
+#topXpane table {
+  border-collapse: collapse;
+}
+
+#topXpane caption {
+  padding: 2px;
+  font-weight: bold;
+/*  background-color:#050505;*/
+  color:#AAAAAA;
+}
+
+#topXpane td { 
+  padding: 2px;
+  font-style: italic;
+  color:#AAAAAA;
+/*   text-shadow: 4px 4px 4px #111111; */
+}
+
+.proconlabel {
+  font-weight:bold;
+  color:#AAAAAA;
+/*   text-shadow: 4px 4px 4px #111111; */
+}
+
+/*********************************************  
+* 
+* Next rules are for the !rank button 
+* 
+*********************************************/
+
+#ranksubmit {
+  height:40px;
+  background: #00080d;
+  background-image: -webkit-linear-gradient(top, #00080d, #21313b);
+  background-image: -moz-linear-gradient(top, #00080d, #21313b);
+  background-image: -ms-linear-gradient(top, #00080d, #21313b);
+  background-image: -o-linear-gradient(top, #00080d, #21313b);
+  background-image: linear-gradient(to bottom, #00080d, #21313b);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #AAAAAA;
+  font-size: 16px;
+  padding: 4px 12px 4px 12px;
+  text-decoration: none;
+  margin-top:5px;
+  margin-bottom:5px;
+}
+
+#ranksubmit:active {
+  background: #21313b;
+  background-image: -webkit-linear-gradient(top, #21313b, #00080d);
+  background-image: -moz-linear-gradient(top, #21313b, #00080d);
+  background-image: -ms-linear-gradient(top, #21313b, #00080d);
+  background-image: -o-linear-gradient(top, #21313b, #00080d);
+  background-image: linear-gradient(to bottom, #21313b, #00080d);
+  text-decoration: none;
+}
