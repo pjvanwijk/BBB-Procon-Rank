@@ -94,6 +94,13 @@
 /*   text-shadow: 4px 4px 4px #111111; */
 }
 
+img.center {
+  display: block;
+  margin-left: auto;
+  margin-top: 10%;
+  margin-right: auto;
+} 
+
 /*********************************************  
 * 
 * Next rules are for the !rank button 

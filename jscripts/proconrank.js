@@ -18,6 +18,7 @@ function getTopX(){
 
 function getRankName(){
       	//perform an Ajax request
+	$("rankingresult").innerHTML = "<img src='./images/ajax-rankloader.gif' alt='Loading' class='center'>";
 	var playerName = $("rankname").value;
 	var ajax = new XMLHttpRequest();
  	ajax.onreadystatechange = function() {
@@ -32,6 +33,7 @@ function getRankName(){
 
 function getRankWeapon(){
       	//perform an Ajax request
+	$("rankingresult").innerHTML = "<img src='./images/ajax-rankloader.gif' alt='Loading' class='center'>";
 	var playerName = $("rankname").value;
 	var weaponName = $("rankweapon").value;
 	var ajax = new XMLHttpRequest();
@@ -47,6 +49,7 @@ function getRankWeapon(){
 
 function getTopName(){
 	//perform an Ajax request
+	$("topXpane").innerHTML = "<img src='./images/ajax-toploader.gif' alt='Loading' class='center'>";
 	var playerName = $("rankname").value;
 	var ajax = new XMLHttpRequest();
  	ajax.onreadystatechange = function() {
@@ -60,6 +63,7 @@ function getTopName(){
 
 function getTopWeapon(){
   	//perform an Ajax request
+	$("topXpane").innerHTML = "<img src='./images/ajax-toploader.gif' alt='Loading' class='center'>";
 	var playerName = $("rankname").value;
 	var weaponName = $("rankweapon").value;
 	var ajax = new XMLHttpRequest();

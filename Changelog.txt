@@ -1,0 +1,3 @@
+0.1b 
+Initial first beta version released on the website on 22 april 2015.
+
